@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 ) Dois input's e quatro botões. Um botão para cada operação.</title>
+    <link rel="shortcut icon" href="img/platina-2-elos-valorant.jpg">
+</head>
+<body>
+    <h1>Soma, multiplicação, divisão e subtração</h1>
+   
+    <input type="number" name="number1" id="number1">
+    
+    <br>
+    <br>
+    <input type="number" name="number1" id="number2">
+    <br>
+    <div id="resp"><br>Resultado<br></div>
+    <br>
+
+    <input type="button" name="clicar" value="somar(+)" onclick="soma()">
+    <input type="button" name="clicar" value="Subtrair(-)" onclick="subtrair()">
+    <input type="button" name="clicar" value="multiplicar(x)" onclick="multiplicar()">
+    <input type="button" name="clicar" value="dividir(÷)" onclick="dividir()">
+    
+    <script>
+        function soma(){
+            let num1 = window.document.getElementById('number1')
+            let num2 = window.document.getElementById('number2')
+
+            let n = Number(num1.value)
+            let n2 = Number(num2.value)
+            let somar = n + n2 
+            resp.innerHTML = somar
+        }
+
+        function subtrair(){
+            let num1 = window.document.getElementById('number1')
+            let num2 = window.document.getElementById('number2')
+   
+            let n = Number(num1.value)
+            let n2 = Number(num2.value)
+            let subtrair = n - n2 
+            resp.innerHTML = subtrair
+           }
+
+           function multiplicar(){
+            let num1 = window.document.getElementById('number1')
+            let num2 = window.document.getElementById('number2')
+   
+            let n = Number(num1.value)
+            let n2 = Number(num2.value)
+            let multiplicar = n * n2 
+            resp.innerHTML = multiplicar
+           }
+
+           function dividir(){
+            let num1 = window.document.getElementById('number1')
+            let num2 = window.document.getElementById('number2')
+   
+            let n = Number(num1.value)
+            let n2 = Number(num2.value)
+            let dividir = n / n2 
+            resp.innerHTML = dividir
+           }
+    </script>
+</body>
+</html>

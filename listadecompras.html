@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5)input Lista De Compras</title>
+    <link rel="shortcut icon" href="img/platina-2-elos-valorant.jpg">
+</head>
+<body>
+    <h1>Clique no botão abaixo para adicionar mais uma unidade do nosso produto no carrinho!</h1>
+    <button id="clique">Adicionar ao Carinho</button> 
+
+    <script>     
+        const cli = document.querySelector('#clique')
+
+        cli.addEventListener('click', criaBotao)
+        
+        function criaBotao() {
+            const btn = document.createElement("BUTTON");
+            btn.innerHTML = "Adicionado +1 produto ao carrinho de compras!"    
+         document.body.appendChild(btn);                 
+        }
+    </script>
+</body>
+</html>

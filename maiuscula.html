@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1)Letras Maiusculas</title>
+    <link rel="shortcut icon" href="img/platina-2-elos-valorant.jpg">
+</head>
+<body>
+    
+    <p>Transformando tudo em letras MAIUSCULAS</p>
+    <p>
+        Digite algo:
+        <input type="text" name="palavra" id="txtpalavra">
+    </p>
+
+    <script>
+        const palavra = document.getElementById("txtpalavra")
+ 
+        palavra.addEventListener('keyup', maiusculo)
+
+        function maiusculo() {
+            palavra.value = palavra.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>
